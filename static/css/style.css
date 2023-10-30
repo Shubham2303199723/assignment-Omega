@@ -1,0 +1,93 @@
+*{
+    background-color: rgb(206, 201, 201);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.Heading{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.div-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.div-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.div-left label{
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.div-left input{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 25px;
+}
+.div-left select{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 25px;
+}
+.div-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.div-right label{
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.div-right input{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 25px;
+}
+.div-right select{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 25px;
+}
+.btn{
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 1.1rem
+}
+.inpt{
+    margin-left: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 1.1rem
+}
+.btn:hover{
+    background-color:rgb(38, 76, 182);
+    color: white;
+}
+.inpt:hover{
+    background-color:green;
+    color: white;
+}

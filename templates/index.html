@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>New Party Data Entry</title>
+</head>
+<body>
+    <h1 class="Heading">New Party Data Entry Screen</h1> <hr>
+    <form method="POST" action="{% url 'a_party' %}">
+        {% csrf_token %}
+        <div class="div-main">
+            <div class="div-left">
+                <label for="select_city">Select City</label>
+                <select name="Select_city" id="select_city">
+                    <option value="">*******</option>
+                    <option id="select_city" name="indore" value="indore">Indore</option>
+                    <option id="select_city" name="bhopal" value="bhopal">Bhopal</option>
+                    <option id="select_city" name="jaipur" value="jaipur">Jaipur</option>
+                </select> <br>
+                <label for="address">Address</label> 
+                <input id="address" name="Address" type="text" placeholder="Enter Address Here"><br>
+                <label for="mobileNo">Enter Mobile No.</label>
+                <input id="mobileNo" name="mobileNo" type="tel" placeholder="Enter Mobile Number Here"> <br>
+                <label for="gstno">Enter GST No</label>
+                <input id="gstno" name="gstno" type="text" placeholder="Enter GST No. Here"> <br>
+            </div>
+            <div class="div-right">
+                <label for="party_type">Party Type</label>
+                <input id="party_type" name="party_type" type="text" placeholder="Enter Party Type Here"> <br>
+                <label for="address_full" >Enter Address Line 1</label>
+                <input id="address_full" name="address_full" type="text" placeholder="Enter Address Line Here"> <br>
+                <label for="email" >Enter Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter Email Here"> <br>
+                <label for="landline" >Enter Land Line No.</label>
+                <input id="landline" name="landline" type="tel" placeholder="Enter Party Number Here"> <br>
+            </div>
+        </div>
+        <div>
+            <button class="btn">Go Home</button>
+            <input type="submit" class="inpt">
+        </div>
+        
+    </form>
+</body>
+</html>
